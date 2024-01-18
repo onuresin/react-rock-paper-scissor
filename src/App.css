@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(assets/background.svg);
+  background-repeat: no-repeat;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+/*ANASAYFA BÖLÜMÜ*/
+.gameModeContainer {
+  width: 375px;
+  margin: 0 auto;
+}
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+  padding: 32px 32px 0 32px;
+}
+.game-text {
+  padding: 24px 205px 24px 24px;
+  border: 3px solid gray;
+  border-radius: 5px;
+  & h4 {
+    margin-bottom: 8px;
+    color: #fff;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 16px; /* 76.19% */ 
+  }
+}
+.welcome-text h2 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+}
+.gameMode-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;  
+  width: auto;
+  margin: 0 auto;
+}
+.classic-mode, .bonus-mode {
+  padding: 12px 37px;
+  background-color: transparent;
+  border: 2px solid gray;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.5px;
+  border-radius: 5px;
+}
