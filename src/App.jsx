@@ -20,9 +20,6 @@ export default function App() {
                   <h4>KAĞIT</h4>
                   <h4>MAKAS</h4>
                 </span>
-                <div className="animation-section">
-                  
-                </div>
             </div>
           <div className="welcome-text">
             <h2>Hoşgeldiniz! Lütfen oynamak istediğiniz modu seçiniz!</h2>
