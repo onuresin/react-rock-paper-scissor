@@ -25,10 +25,10 @@ export default function App() {
             <h2>Hoşgeldiniz! Lütfen oynamak istediğiniz modu seçiniz!</h2>
           </div>
           <div className="gameMode-btns">
-              <Link to="/game/classic">
+              <Link to="/oldschool">
                 <button className='classic-mode' onClick={() => handleModeSelect('classic')}>Klasik Oyun Modu</button>
               </Link>
-              <Link to="game/bonus">
+              <Link to="/oldschool">
                 <button className='bonus-mode' onClick={() => handleModeSelect('bonus')}>Bonus Oyun  Modu</button>
               </Link>
           </div>

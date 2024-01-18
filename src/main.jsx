@@ -14,7 +14,7 @@ const router = createBrowserRouter([
         element:<OldSchool/>
     },
     {
-        path:"/bonuscontent",
+        path:"/oldschool",
         element:<OldSchool/>
     }
 ])
