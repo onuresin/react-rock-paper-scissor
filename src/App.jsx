@@ -15,9 +15,14 @@ export default function App() {
       <div className="gameModeContainer">
         <div className="innerContainer">
           <div className="game-text">
-                <h4>TAŞ</h4>
-                <h4>KAĞIT</h4>
-                <h4>MAKAS</h4>
+                <span className='text-section'>
+                  <h4>TAŞ</h4>
+                  <h4>KAĞIT</h4>
+                  <h4>MAKAS</h4>
+                </span>
+                <div className="animation-section">
+                  
+                </div>
             </div>
           <div className="welcome-text">
             <h2>Hoşgeldiniz! Lütfen oynamak istediğiniz modu seçiniz!</h2>
