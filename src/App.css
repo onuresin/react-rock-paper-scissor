@@ -15,6 +15,7 @@ body {
 .gameModeContainer {
   width: 375px;
   margin: 0 auto;
+  height: 750px;
 }
 .innerContainer {
   display: flex;
@@ -174,6 +175,7 @@ body {
   letter-spacing: 2.5px; 
 }
 /*MODAL BÖLÜMÜ*/
+
 body.active-modal {
   overflow-y: hidden;
 }
@@ -241,3 +243,8 @@ body.active-modal {
   background-color: transparent;
   border: 0;
 }
+
+
+
+
+/*Taş-Makas-Kağıt-Kertenkele-Spock*/

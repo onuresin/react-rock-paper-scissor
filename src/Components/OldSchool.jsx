@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Triangle from "../assets/triangle-bg.svg";
-import Backto from "../assets/arrow-left-back.svg";
 import Close from "../assets/close-shape.svg";
 import Rock from "../assets/rock.svg";
 import Scissors from "../assets/scissors.svg";

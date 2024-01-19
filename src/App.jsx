@@ -28,7 +28,7 @@ export default function App() {
               <Link to="/oldschool">
                 <button className='classic-mode' onClick={() => handleModeSelect('classic')}>Klasik Oyun Modu</button>
               </Link>
-              <Link to="/oldschool">
+              <Link to="/bonuscontent">
                 <button className='bonus-mode' onClick={() => handleModeSelect('bonus')}>Bonus Oyun  Modu</button>
               </Link>
           </div>
