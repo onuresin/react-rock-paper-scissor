@@ -7,8 +7,7 @@
 }
 
 body {
-  background: url(assets/background.svg);
-  background-repeat: no-repeat;
+  background: radial-gradient(134.34% 134.34% at 50% 0%, #1F3757 0%, #131537 100%); 
   font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
@@ -114,22 +113,131 @@ body {
   }
 }
 .oldSchool-gamebtns {
+  width: 312px;
+  margin:0 auto;
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  & img {
-    position: relative;
-    top: 50px;
-  }
-  
-  & .gamebtns-top {
-    display: flex;
-    gap: 51px;
-    & button {
-      background: transparent;
-      border: 0;
+}
+.triangle {
+  position: absolute;
+  align-self: center;
+  margin-top: 70px;
+}
+.gamebtns-top {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  transform: translateX(0.01rem);
+  & button {
+    background: transparent;
+    border: 0;
+    & img {
+      width: 130px;
     }
   }
+}
+.gamebtns-bot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(0.01rem);
+  & button {
+    background: transparent;
+    border: 0;
+    & img {
+      width: 130px;
+    }
+  }
+}
+.footer {
+  margin-top: 50px;
+}
+/*MODAL BUTON*/
+.modal-container {
+  display: flex;
+  justify-content: center;
+  width: 128px;
+  margin: 0 auto;
+  margin-bottom: 56px;
 
+}
+.modal-btn {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  padding: 11px 36px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.5px; 
+}
+/*MODAL BÖLÜMÜ*/
+body.active-modal {
+  overflow-y: hidden;
+}
+.modal-section {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.modal-inner {
+  width: 305px;
+  margin: 0 auto;
+  display: flex;
+  gap: 113px;
+  flex-direction: column;
+  padding-block: 95px 65px;
+  & h4 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px; /* 100% */ 
+    color: #3b4262;
+  }
+}
+.modal-content {
+  background-image: url(assets/rules-mobil.svg);
+  background-repeat: no-repeat;
+  width: 305px;
+  height: 271px;
+  display: flex;
+  flex-direction: column;
+  gap: 103px;
+}
+.top {
+  text-align: center;
+  background-color: #fff;
+  padding: 12px 2px;
+  width: 55px;
+  margin: 0 auto;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 13px; /* 100% */ 
+  color: #B1B4C5;
+}
+.bot {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  gap: 90px;
+  margin-top: -6px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 13px; /* 100% */ 
+  color: #B1B4C5;
+  & h3 {
+    width: 55px;
+    background-color: #fff;
+  }
+}
+.modal-close {
+  background-color: transparent;
+  border: 0;
 }
