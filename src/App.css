@@ -114,15 +114,15 @@ body {
   }
 }
 .oldSchool-gamebtns {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 15px;
-  & .bg {
+  & img {
     position: relative;
-    top: 150px;
-    left: 0;
-    right: 0;
+    top: 50px;
   }
+  
   & .gamebtns-top {
     display: flex;
     gap: 51px;

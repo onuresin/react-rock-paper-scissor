@@ -19,7 +19,6 @@ export default function OldSchool() {
                         </div>
                     </div>
                     <div className="oldSchool-gamebtns">
-                        
                         <div className="gamebtns-top">
                             <button><img src="src/assets/rock.svg"/></button>
                             <button><img src="src/assets/scissors.svg"/></button>
