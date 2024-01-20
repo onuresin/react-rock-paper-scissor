@@ -5,6 +5,10 @@ import Close from "../assets/close-shape.svg";
 import Rock from "../assets/rock.svg";
 import Scissors from "../assets/scissors.svg";
 import Paper from "../assets/paper.svg";
+import TriangleRes from "../assets/triangle-res.svg";
+import RockRes from "../assets/rock-res.svg";
+import PaperRes from "../assets/paper-res.svg";
+import ScissorsRes from "../assets/scissors-res.svg";
 
 export default function OldSchool() {
   const [modal, setModal] = useState(false);
@@ -39,12 +43,22 @@ export default function OldSchool() {
           <div className="oldSchool-gamebtns">
             <img src={Triangle} alt="" className="triangle" />
             <div className="gamebtns-top">
-              <button><img src={Rock} alt="Rock" /></button>
+              <button><img src={Paper} alt="Paper" /></button>
               <button><img src={Scissors} alt="Scissors" /></button>
             </div>
             <div className="gamebtns-bot">
-              <button><img src={Paper} alt="Paper" /></button>
+              <button><img src={Rock} alt="Rock" /></button>
             </div>
+          </div>
+          <div className="oldSchool-gamebtnsRes">
+            <img src={TriangleRes} alt="" className="triangleRes" />
+              <div className="gamebtns-topRes">
+                <button><img src={PaperRes} alt="PaperRes" /></button>
+                <button><img src={ScissorsRes} alt="ScissorsRes" /></button>
+              </div>
+              <div className="gamebtns-botRes">
+                <button><img src={RockRes} alt="RockRes" /></button>
+              </div>
           </div>
           <div className="footer">
             <div className="modal-container">
@@ -54,7 +68,10 @@ export default function OldSchool() {
                 <div className='modal-section'>
                   <div onClick={toggleModal} className="before-opened"></div>
                   <div className="modal-inner">
-                    <h4>KURALLAR</h4>
+                    <div className="top-sec">
+                      <h4>KURALLAR</h4>
+                      <button className='modal-closeRes' onClick={toggleModal}><img src={Close} alt="Close" /></button>
+                    </div>
                     <div className="modal-content">
                        <span className='top'><h3>YENER</h3></span>
                        <span className='bot'>
