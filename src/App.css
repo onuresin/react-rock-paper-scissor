@@ -255,6 +255,9 @@ body.active-modal {
 
 
 /*Taş-Makas-Kağıt-Kertenkele-Spock*/
+.bonusContent-gamebtnsRes {
+  display: none;
+}
 .bonusContentContainer {
   width: 375px;
   margin: 0 auto;
@@ -549,4 +552,112 @@ body.active-modal {
     align-items: center;
     justify-content: space-between;
   }
+  /*BONUS CONTENT*/
+  .bonusContent-gamebtns {
+    display: none;
+  }
+  .bonusContent-gamebtnsRes {
+    display: block;
+  }
+  .bonusContentContainer {
+    width: 1366px;
+    margin: 0 auto;
+  }
+  .bonusContent-text {
+    width: 700px;
+    height: 150px;
+    margin: 0 auto;
+    & .text-left {
+      padding: 50px 0 30px 32px;
+      & h4 {
+        margin-bottom: 16px;
+        color: #fff;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 10px; /* 80% */ 
+      }
+    }
+    & .text-score {
+      width: 150px;
+      border-radius: 8px; 
+      background: linear-gradient(0deg, #F3F3F3 0%, #FFF 100%);
+      box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.20);
+      margin-right: 12px;
+      & .score-box {
+        padding-block: 20px;
+        & h5 {
+          text-align: center;
+          color: #2A45C2;
+          font-weight: 600;
+          line-height: normal;
+          letter-spacing: 1.563px; 
+        }
+        & h2 {
+          text-align: center;
+          font-size: 40px;
+          font-weight: 700;
+          line-height: 40px; /* 100% */ 
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+  .bonusContent-gamebtnsRes {
+    width: 476px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .polygonRes {
+    position: absolute;
+    align-self: center;
+    margin-top: 70px;
+  }
+  .bonusGamebtns-topRes {
+    margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  transform: translateY(0.01rem);
+    & button {
+      border: 0;
+      background: transparent;
+    }
+    & img {
+      width: 145px;
+    }
+  }
+  .bonusGamebtns-midRes {
+    margin-top: -25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(0.01rem);
+    & button {
+      border: 0;
+      background: transparent;
+    }
+    & img {
+      width: 145px;
+    }
+  }
+  .bonusGamebtns-botRes {
+    display: flex;
+    justify-content: space-evenly;
+    transform: translateY(0.01rem);
+    & button {
+      border: 0;
+      background: transparent;
+    }
+    & img {
+      width: 145px;
+    }
+  }
+.bonusGamebtns-topRes button:hover, .bonusGamebtns-midRes button:hover, .bonusGamebtns-botRes button:hover {
+  cursor:url(/src/assets/Pointer.svg), auto;
+}
+.bonusGamebtns-topRes button:active, .bonusGamebtns-midRes button:active, .bonusGamebtns-botRes button:active {
+  transform: translateY(3px);
+}
+
 }
